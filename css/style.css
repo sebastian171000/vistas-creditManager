@@ -85,14 +85,14 @@ h4 {
 }
 
 .contenido-bienvenida h2 {
-    font-size: 6rem;
-    line-height: 7rem;
+    font-size: 5rem;
+    line-height: 6rem;
     margin-bottom: 0;
 }
 
 .contenido-bienvenida p {
     font-weight: 700;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .contenido-bienvenida img {
@@ -104,26 +104,26 @@ h4 {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    padding: 1rem 3rem;
+    padding: 1rem 2.7rem;
     border-radius: 12px;
 }
 
 .btn-registrarse {
     text-align: right;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .hero-login .contenedor-input label {
     color: white;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.8rem;
 }
 
 .contenedor-input {
     display: block;
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .hero-login .contenedor-input input {
@@ -131,8 +131,8 @@ h4 {
     background-color: transparent;
     border: none;
     border-bottom: 3px solid white;
-    margin-top: 2rem;
-    font-size: 25px;
+    margin-top: 1.5rem;
+    font-size: 20px;
 }
 
 input:focus {
@@ -141,14 +141,14 @@ input:focus {
 
 .hero-login .contenedor-input input {
     font-family: "FontAwesome";
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
 
 ::placeholder {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .hero-login form {
@@ -156,7 +156,7 @@ input:focus {
 }
 
 .hero-login .contenedor-input .checkbox label {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     margin-left: 6px;
 }
@@ -175,12 +175,12 @@ input:focus {
     display: block;
     text-align: center;
     color: #fddb3a;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .hero-login input[type="submit"] {
     background-color: #fddb3a;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     color: black;
     font-weight: 800;
@@ -246,7 +246,7 @@ input:focus {
 }
 
 .hero-header .contenedor {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .hero-header a {
@@ -254,7 +254,7 @@ input:focus {
     font-weight: 700;
     text-decoration: none;
     background-color: #fddb3a;
-    padding: 1rem 3rem;
+    padding: .8rem 2.6rem;
     border-radius: 7px;
 }
 
@@ -270,7 +270,7 @@ input:focus {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    padding-top: 5rem;
+    padding-top: 4rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -311,21 +311,21 @@ input:focus {
     display: block;
     color: white;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .registro-contenido input {
     color: white;
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
     margin-top: 1rem;
-    font-size: 17px;
+    font-size: 15px;
     width: 100%;
 }
 
 .registro-contenido {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -342,24 +342,26 @@ input:focus {
 
 .advertencia i {
     color: #fddb3a;
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 1.5rem;
 }
 
 .advertencia p {
-    line-height: 2rem;
+    line-height: 1.8rem;
     margin: 0;
+    font-size: 14px;
 }
 
 .grid-registro input[type="submit"] {
     border: none;
     background-color: #fddb3a;
     color: black;
-    padding: 1rem 2rem;
+    padding: .8rem 1.8rem;
     font-weight: 700;
     border-radius: 7px;
     margin-top: 2rem;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .filefield {
@@ -371,12 +373,12 @@ input:focus {
     align-items: center;
     cursor: pointer;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .upload i {
     margin-right: 1rem;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .img,
@@ -397,4 +399,8 @@ input:focus {
 .registro-contenido.select label {
     display: inline;
     margin-right: 1rem;
+}
+
+.hero-registro h2 {
+    font-size: 3rem;
 }
