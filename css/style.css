@@ -406,3 +406,116 @@ input:focus {
 .hero-registro h2 {
     font-size: 3rem;
 }
+
+
+/**listadoClientes.html**/
+
+.hero-header-menu {
+    background-color: #41444b;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    font-size: 18px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.menu a {
+    color: #fff;
+    margin-right: 5rem;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fddb3a;
+}
+
+.menu {
+    margin-right: 6rem;
+}
+
+.menu-perfil {
+    display: flex;
+    align-items: center;
+}
+
+.menu-perfil p {
+    margin-right: 1rem;
+}
+
+.menu-perfil i {
+    font-size: 3.6rem;
+}
+
+.contenido-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-registro.color-listado-clientes {
+    background-color: #f6f4e6;
+    color: black;
+    margin-top: 3.5rem;
+}
+
+.cliente {
+    background-color: #faf8f0;
+    border: 2px solid #97958d;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.cliente:hover {
+    background-color: #f9eaa1;
+}
+
+.cliente .texto-cliente h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cliente .texto-cliente p {
+    margin: 0;
+    font-weight: 800;
+    margin-left: 2.5rem;
+}
+
+.detalle-cliente a {
+    margin: 0;
+    color: #fddb3a;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.detalle-cliente p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.listado-clientes {
+    overflow-y: scroll;
+    height: 67vh;
+}
+
+.listado-clientes::-webkit-scrollbar {
+    width: 7px;
+    /* width of the entire scrollbar */
+}
+
+.listado-clientes::-webkit-scrollbar-track {
+    background: white;
+    border: 1px solid #41444b;
+    border-radius: 5px;
+    /* color of the tracking area */
+}
+
+.listado-clientes::-webkit-scrollbar-thumb {
+    background-color: #fddb3a;
+    border-radius: 5px;
+}
