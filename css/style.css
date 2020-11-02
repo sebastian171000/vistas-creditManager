@@ -519,3 +519,32 @@ input:focus {
     background-color: #fddb3a;
     border-radius: 5px;
 }
+
+
+/**Creditos.html**/
+
+.grid-creditos {
+    column-gap: 1rem;
+    margin-top: 4rem;
+}
+
+.input-credito {
+    margin-bottom: 4rem;
+    font-weight: 800;
+}
+
+.input-credito label {
+    margin-right: 2rem;
+}
+
+.form-creditos input[type="submit"] {
+    border: 1px solid #d5d0b2;
+    background-color: #fddb3a;
+    color: black;
+    padding: .8rem 3rem;
+    font-weight: 700;
+    border-radius: 7px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 18px;
+}
