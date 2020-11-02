@@ -548,3 +548,142 @@ input:focus {
     cursor: pointer;
     font-size: 18px;
 }
+
+
+/**detalleCliente.html**/
+
+.hero-detalle {
+    background-color: #f9eaa1;
+    padding: 2rem 4rem;
+    border: 1px solid #a3a199;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.fila-detalle {
+    display: flex;
+    align-items: center;
+}
+
+.fila-detalle p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.fila-detalle i {
+    font-size: 30px;
+    margin-right: 4rem;
+}
+
+.grid-detalleCliente {
+    grid-template-columns: 1.8fr 1fr;
+}
+
+.hero-registro.color-listado-clientes.detalle-padding {
+    padding-bottom: 4rem;
+}
+
+.btn a {
+    border: 1px solid #d5d0b2;
+    background-color: #fddb3a;
+    color: black;
+    padding: .8rem 3rem;
+    font-weight: 700;
+    border-radius: 7px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/**Consultas**/
+
+.contenedor-consultas p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.table-consultas {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.table-consultas thead {
+    background-color: black;
+    color: #fff;
+}
+
+
+/* .table-consultas thead tr th {
+    padding: 0 3rem;
+} */
+
+.table-consultas tbody tr {
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #b9b9b7;
+}
+
+.contenedor-table {
+    overflow-y: scroll;
+    margin-top: 3rem;
+    height: 38vh;
+    border-radius: 1rem;
+}
+
+.contenedor-table::-webkit-scrollbar {
+    width: 7px;
+    /* width of the entire scrollbar */
+}
+
+.contenedor-table::-webkit-scrollbar-track {
+    background: white;
+    border: 1px solid #41444b;
+    border-radius: 5px;
+    /* color of the tracking area */
+}
+
+.contenedor-table::-webkit-scrollbar-thumb {
+    background-color: #fddb3a;
+    border-radius: 5px;
+}
+
+.contenedor-consultas input[type="submit"] {
+    border: 1px solid #d5d0b2;
+    background-color: #fddb3a;
+    color: black;
+    padding: .5rem 3rem;
+    font-weight: 700;
+    border-radius: 7px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contenedor-consultas input[type="search"] {
+    font-weight: 800;
+    padding-left: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.buscador {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.buscador::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 1rem;
+}
