@@ -491,10 +491,22 @@ input:focus {
     background-color: #41444b;
     color: #fff;
     text-align: right;
-    position: absolute;
     font-size: 18px;
     z-index: 1000;
     width: 100%;
+}
+
+.hero-header-menu i {
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .hero-header-menu {
+        position: absolute;
+    }
+    .hero-header-menu i {
+        display: none;
+    }
 }
 
 .menu a {
@@ -509,6 +521,12 @@ input:focus {
 
 .menu {
     margin-right: 6rem;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+    }
 }
 
 .menu-perfil {
@@ -533,7 +551,19 @@ input:focus {
 .hero-registro.color-listado-clientes {
     background-color: #f6f4e6;
     color: black;
-    margin-top: 3.5rem;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-registro.color-listado-clientes {
+        padding-top: 10rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-registro.color-listado-clientes {
+        margin-top: 3.5rem;
+    }
 }
 
 .cliente {
@@ -545,6 +575,14 @@ input:focus {
     border-radius: 10px;
     margin-bottom: 2rem;
     margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cliente {
+        margin-right: 0;
+        margin-top: 2rem;
+        padding: 15px 12px;
+    }
 }
 
 .cliente:hover {
@@ -575,9 +613,11 @@ input:focus {
     font-weight: 900;
 }
 
-.listado-clientes {
-    overflow-y: scroll;
-    height: 67vh;
+@media (min-width: 768px) {
+    .listado-clientes {
+        overflow-y: scroll;
+        height: 67vh;
+    }
 }
 
 .listado-clientes::-webkit-scrollbar {
@@ -783,5 +823,61 @@ input:focus {
     }
     .swal-wide {
         height: 20rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .contenedor-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-header-nav {
+        background-color: #FFC107;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+        left: -100%;
+        top: 71px;
+        transition: all .5s;
+    }
+    .left-100 {
+        left: -100%!important;
+    }
+    .show-menu {
+        left: 0!important;
+    }
+    .hero-header-menu {
+        z-index: 10000;
+    }
+    .menu a {
+        color: var(--blanco);
+        display: block;
+        padding: 27px 0px;
+        font-size: 23px;
+        margin: 0;
+    }
+    .contenedor.contenedor-menu {
+        width: 100%;
+        background-color: #41444b;
+    }
+    .hero-header-menu {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        z-index: -1;
     }
 }

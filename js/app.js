@@ -58,5 +58,18 @@ jQuery(document).ready($ => {
         }
     }
 
+    let contador = 0;
+    $(".menu-bar").on('click', function() {
+        if (contador == 0) {
+            $('.hero-header-nav').removeClass('left-100');
+            $('.hero-header-nav').addClass('show-menu');
+            contador = 1;
+        } else {
+            $('.hero-header-nav').removeClass('show-menu');
+            contador = 0;
+        }
+
+    });
+
 
 });
