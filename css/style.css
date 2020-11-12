@@ -310,52 +310,71 @@ input:focus {
 }
 
 .hero-header {
-    position: absolute;
-    top: 0;
-    z-index: 100;
     width: 100%;
 }
 
-.fondo-imagen-registro-cliente {
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding-top: 4rem;
-    position: relative;
-    display: flex;
-    align-items: center;
+@media (min-width: 768px) {
+    .hero-header {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 768px) {
+    .fondo-imagen-registro-cliente {
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        padding-top: 4rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .hero-registro {
     background-color: #41444b;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    position: relative;
     z-index: 0;
     color: white;
-    padding: 2rem 5rem;
-    margin-top: 2rem;
+    padding: 3rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-registro {
+        width: 70%;
+        padding: 2rem 5rem;
+        position: relative;
+        margin-top: 2rem;
+        padding: 1rem 0;
+    }
 }
 
 .hero-registro h2 {
     margin: 0;
 }
 
-.fondo-imagen-registro-cliente::before {
-    content: '';
-    background-color: rgb(0, 0, 0, .5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+@media (min-width: 768px) {
+    .fondo-imagen-registro-cliente::before {
+        content: '';
+        background-color: rgb(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
 
-.grid-registro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8rem;
+@media (min-width: 768px) {
+    .grid-registro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8rem;
+    }
 }
 
 .registro-contenido label {
@@ -438,6 +457,15 @@ input:focus {
     margin: 0 auto;
     display: block;
     border-radius: 12px;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+}
+
+@media (min-width: 768px) {
+    .img,
+    .img-defecto {
+        margin: 0 auto;
+    }
 }
 
 .checkbox label {
