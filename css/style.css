@@ -70,26 +70,47 @@ h4 {
 
 /**login**/
 
-.grid-login {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+@media (min-width: 768px) {
+    .grid-login {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
 }
 
 .hero-bienvenida {
     background-color: #f6f4e6;
-    padding: 6rem;
+    padding: 6rem 2rem;
+    padding-top: 1rem;
 }
 
 .hero-login {
     background-color: #41444b;
-    padding: 0 6rem;
+    padding: 0rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 8rem;
 }
 
 .contenido-bienvenida h2 {
-    font-size: 5rem;
-    line-height: 6rem;
     margin-bottom: 0;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.contenido-bienvenida p {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-bienvenida h2 {
+        font-size: 50px;
+        line-height: 60px;
+        text-align: left;
+    }
+    .contenido-bienvenida p {
+        text-align: left;
+    }
 }
 
 .contenido-bienvenida p {
@@ -113,6 +134,13 @@ h4 {
 .btn-registrarse {
     text-align: right;
     margin-top: 3rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .btn-registrarse {
+        display: block;
+    }
 }
 
 .hero-login .contenedor-input label {
@@ -186,10 +214,24 @@ input:focus {
     border: none;
     color: black;
     font-weight: 800;
-    padding: 1.3rem 12rem;
+    padding: 1.3rem 9rem;
     border-radius: 9px;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .hero-login input[type="submit"] {
+        background-color: #fddb3a;
+        font-size: 18px;
+        border: none;
+        color: black;
+        font-weight: 800;
+        padding: 1.3rem 12rem;
+        border-radius: 9px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
 }
 
 .swal-wide {
@@ -217,12 +259,19 @@ input:focus {
 .swal2-cancel {
     border: none;
     /* padding: .8rem 2rem; */
-    width: 11rem;
+    width: 14rem;
     border-radius: 10px;
     font-size: 12px;
     font-weight: 800;
-    padding: .6rem 0;
+    padding: .8rem 0;
     cursor: pointer;
+    margin-bottom: 1rem!important;
+}
+
+@media (min-width: 768px) {
+    .swal2-actions {
+        flex-wrap: inherit;
+    }
 }
 
 :focus {
@@ -686,4 +735,25 @@ input:focus {
     z-index: 1000;
     bottom: 0;
     left: 1rem;
+}
+
+.btn-registrarse.mobile {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .btn-registrarse.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .swal2-confirm,
+    .swal2-deny,
+    .swal2-cancel {
+        margin: 0;
+    }
+    .swal-wide {
+        height: 20rem;
+    }
 }
